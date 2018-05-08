@@ -1,0 +1,9 @@
+D:\Semester 4\Pengolahan Citra\Prak\Praktikum\Praktikum\bin\Debug\Praktikum.exe.config
+D:\Semester 4\Pengolahan Citra\Prak\Praktikum\Praktikum\bin\Debug\Praktikum.exe
+D:\Semester 4\Pengolahan Citra\Prak\Praktikum\Praktikum\bin\Debug\Praktikum.pdb
+D:\Semester 4\Pengolahan Citra\Prak\Praktikum\Praktikum\obj\Debug\Praktikum.csprojResolveAssemblyReference.cache
+D:\Semester 4\Pengolahan Citra\Prak\Praktikum\Praktikum\obj\Debug\Praktikum.Form1.resources
+D:\Semester 4\Pengolahan Citra\Prak\Praktikum\Praktikum\obj\Debug\Praktikum.Properties.Resources.resources
+D:\Semester 4\Pengolahan Citra\Prak\Praktikum\Praktikum\obj\Debug\Praktikum.csproj.GenerateResource.Cache
+D:\Semester 4\Pengolahan Citra\Prak\Praktikum\Praktikum\obj\Debug\Praktikum.exe
+D:\Semester 4\Pengolahan Citra\Prak\Praktikum\Praktikum\obj\Debug\Praktikum.pdb
