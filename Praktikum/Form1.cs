@@ -1320,6 +1320,8 @@ namespace Praktikum
         // praktikum deteksi tepi
         public static ArrayList resultSobelX = new ArrayList();
         public static ArrayList resultSobelY = new ArrayList();
+        public static ArrayList resultPrewitX = new ArrayList();
+        public static ArrayList resultPrewitY = new ArrayList();
         public static ArrayList gradientMagnitude = new ArrayList();
         public static ArrayList gradientDirection = new ArrayList();
 
@@ -1378,13 +1380,17 @@ namespace Praktikum
 
             int[,] sobelX = { { -1, 0, 1 }, { -2, 0, 2 }, { -1, 0, 1 } };
             int[,] sobelY = { { 1, 2, 1 }, { 0, 0, 0 }, { -1, -2, -1 } };
+            int[,] prewitX = { { -1, 0, 1 }, { -1, 0, 1 }, { -1, 0, 1 } };
+            int[,] prewitY = { { -1, -1, -1 }, { 0, 0, 0 }, { 1, 1, 1 } };
+            int[,] laplacian = { { 1, -2, -1 }, { -2, 4, -2 }, { 1, -2, 1 } };
+
 
             // count : digunakan untuk menunjukkan index pada list
             int count = 0;
 
             // kondisi untuk mask type, bila X maka lakukan sobel X
             // tetapi jika Y maka lakukan sobel Y
-            if (maskType.Equals("X"))
+            if (maskType.Equals("sobelX"))
             {
                 // looping untuk menghitung nilai sobel X pada titik (x,y)
                 for (int y = 0; y < 3; y++)
@@ -1399,7 +1405,7 @@ namespace Praktikum
                     }
                 }
             }
-            else if (maskType.Equals("Y"))
+            else if (maskType.Equals("sobelY"))
             {
                 // looping untuk menghitung nilai sobel Y pada titik (x,y)
                 for (int y = 0; y < 3; y++)
@@ -1408,6 +1414,51 @@ namespace Praktikum
                     {
                         // perhitungan sobel Y
                         result = result + (sobelY[x, y] * Convert.ToInt16(neighboursList[count]));
+
+                        // increment count yang digunakan untuk index neighboursList
+                        count++;
+                    }
+                }
+            }
+            else if (maskType.Equals("prewitX"))
+            {
+                // looping untuk menghitung nilai sobel Y pada titik (x,y)
+                for (int y = 0; y < 3; y++)
+                {
+                    for (int x = 0; x < 3; x++)
+                    {
+                        // perhitungan sobel Y
+                        result = result + (prewitX[x, y] * Convert.ToInt16(neighboursList[count]));
+
+                        // increment count yang digunakan untuk index neighboursList
+                        count++;
+                    }
+                }
+            }
+            else if (maskType.Equals("prewitY"))
+            {
+                // looping untuk menghitung nilai sobel Y pada titik (x,y)
+                for (int y = 0; y < 3; y++)
+                {
+                    for (int x = 0; x < 3; x++)
+                    {
+                        // perhitungan sobel Y
+                        result = result + (prewitY[x, y] * Convert.ToInt16(neighboursList[count]));
+
+                        // increment count yang digunakan untuk index neighboursList
+                        count++;
+                    }
+                }
+            }
+            else if (maskType.Equals("laplacian"))
+            {
+                // looping untuk menghitung nilai sobel Y pada titik (x,y)
+                for (int y = 0; y < 3; y++)
+                {
+                    for (int x = 0; x < 3; x++)
+                    {
+                        // perhitungan sobel Y
+                        result = result + (laplacian[x, y] * Convert.ToInt16(neighboursList[count]));
 
                         // increment count yang digunakan untuk index neighboursList
                         count++;
@@ -1487,7 +1538,7 @@ namespace Praktikum
 
                     // menampung nilai setelah menerapkan sobel mask X
                     // pada titik (x,y)
-                    result = getSobelValue(neighboursList, "X");
+                    result = getSobelValue(neighboursList, "sobelX");
 
                     // memasukkan hasil sobel X di titik (x,y) dalam list
                     resultSobelX.Add(result);
@@ -1547,7 +1598,7 @@ namespace Praktikum
 
                     // menampung nilai setelah menerapkan sobel mask Y
                     // pada titik (x,y)
-                    result = getSobelValue(neighboursList, "Y");
+                    result = getSobelValue(neighboursList, "sobelY");
 
                     // memasukkan hasil sobel Y ke dalam list
                     resultSobelY.Add(result);
@@ -1737,6 +1788,274 @@ namespace Praktikum
                 MessageBox.Show("Fill Sobel X and Sobel Y first to compute gradient direction!");
             }
         }
+
+        //btn_robert clicked
+        private void button19_Click(object sender, EventArgs e)
+        {
+            Bitmap bitmap = new Bitmap(pbDTsrc.Image);
+            Bitmap result = new Bitmap(bitmap.Width,bitmap.Height);
+            progressBar.Minimum = 0;
+            progressBar.Maximum = bitmap.Width - 1;
+
+            progressBar.Value = 0;
+
+            for (int x = 1; x < bitmap.Width; x++)
+            {
+                for (int y = 1; y < bitmap.Height; y++)
+                {
+                    Color w1 = bitmap.GetPixel(x - 1, y);
+                    Color w2 = bitmap.GetPixel(x, y);
+                    Color w3 = bitmap.GetPixel(x, y - 1);
+                    Color w4 = bitmap.GetPixel(x, y);
+                    int x1 = w1.R;
+                    int x2 = w2.R;
+                    int x3 = w3.R;
+                    int x4 = w4.R;
+                    int xb = (int)((x2 - x1) + (x4 - x3));
+                    if (xb < 0) xb = -xb;
+                    if (xb > 255) xb = 255;
+                    Color wb = Color.FromArgb(xb, xb, xb);
+                    result.SetPixel(x, y, wb);
+                }
+                progressBar.Value = x;
+            }
+            progressBar.Value = 0;
+            pbDTDes.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbDTDes.Image = result;
+        }
+
+        // btn_prewitX
+        private void button20_Click(object sender, EventArgs e)
+        {
+            Bitmap bitmap = new Bitmap(pbDTsrc.Image);
+            Bitmap prewitX = new Bitmap(pbDTsrc.Image);
+
+            int result;
+
+            // set nilai min dan max dari progress bar
+            progressBar.Minimum = 0;
+            progressBar.Maximum = bitmap.Height - 1;
+
+            progressBar.Value = 0;
+
+            // inisialisasi array list untuk menampung pixel tetangga
+            ArrayList neighboursList = new ArrayList();
+
+            // mengosongkan list sobel X
+            resultSobelX.Clear();
+
+            // nested looping untuk scanline citra secara horizontal
+            for (int y = 0; y < bitmap.Height; y++)
+            {
+                for (int x = 0; x < bitmap.Width; x++)
+                {
+                    // mengosongkan list
+                    neighboursList.Clear();
+
+                    // menampung list tetangga dengan perluasan 3 x 3
+                    neighboursList = getNeighboursList(x, y, bitmap);
+
+                    // menampung nilai setelah menerapkan sobel mask X
+                    // pada titik (x,y)
+                    result = getSobelValue(neighboursList, "prewitX");
+
+                    // memasukkan hasil sobel X di titik (x,y) dalam list
+                    resultSobelX.Add(result);
+
+                    // kondisi untuk filter nilai harus dalam range 0 - 255
+                    if (result < 0)
+                    {
+                        result = 0;
+                    }
+                    else if (result > 255)
+                    {
+                        result = 255;
+                    }
+
+                    // set nilai pixel baru setelah dikenakan sobel mask X pada titik (x,y)
+                    prewitX.SetPixel(x, y, Color.FromArgb(result, result, result));
+                }
+
+                // set nilai progress bar
+                progressBar.Value = y;
+            }
+
+            // menampilkan gambar hasil sobel X dalam picture box
+            pbDTDes.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbDTDes.Image = prewitX;
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            Bitmap bitmap = new Bitmap(pbDTsrc.Image);
+            Bitmap prewitY = new Bitmap(pbDTsrc.Image);
+
+            int result;
+
+            // set nilai min dan max dari progress bar
+            progressBar.Minimum = 0;
+            progressBar.Maximum = bitmap.Height - 1;
+
+            progressBar.Value = 0;
+
+            // inisialisasi array list untuk menampung pixel tetangga
+            ArrayList neighboursList = new ArrayList();
+
+            // mengosongkan list sobel X
+            resultSobelX.Clear();
+
+            // nested looping untuk scanline citra secara horizontal
+            for (int y = 0; y < bitmap.Height; y++)
+            {
+                for (int x = 0; x < bitmap.Width; x++)
+                {
+                    // mengosongkan list
+                    neighboursList.Clear();
+
+                    // menampung list tetangga dengan perluasan 3 x 3
+                    neighboursList = getNeighboursList(x, y, bitmap);
+
+                    // menampung nilai setelah menerapkan sobel mask X
+                    // pada titik (x,y)
+                    result = getSobelValue(neighboursList, "prewitY");
+
+                    // memasukkan hasil sobel X di titik (x,y) dalam list
+                    resultSobelX.Add(result);
+
+                    // kondisi untuk filter nilai harus dalam range 0 - 255
+                    if (result < 0)
+                    {
+                        result = 0;
+                    }
+                    else if (result > 255)
+                    {
+                        result = 255;
+                    }
+
+                    // set nilai pixel baru setelah dikenakan sobel mask X pada titik (x,y)
+                    prewitY.SetPixel(x, y, Color.FromArgb(result, result, result));
+                }
+
+                // set nilai progress bar
+                progressBar.Value = y;
+            }
+
+            // menampilkan gambar hasil sobel X dalam picture box
+            pbDTDes.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbDTDes.Image = prewitY;
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            Bitmap bitmap = new Bitmap(pbDTsrc.Image);
+            Bitmap laplacian = new Bitmap(pbDTsrc.Image);
+
+            int result;
+
+            // set nilai min dan max dari progress bar
+            progressBar.Minimum = 0;
+            progressBar.Maximum = bitmap.Height - 1;
+
+            progressBar.Value = 0;
+
+            // inisialisasi array list untuk menampung pixel tetangga
+            ArrayList neighboursList = new ArrayList();
+
+            // mengosongkan list sobel X
+            resultSobelX.Clear();
+
+            // nested looping untuk scanline citra secara horizontal
+            for (int y = 0; y < bitmap.Height; y++)
+            {
+                for (int x = 0; x < bitmap.Width; x++)
+                {
+                    // mengosongkan list
+                    neighboursList.Clear();
+
+                    // menampung list tetangga dengan perluasan 3 x 3
+                    neighboursList = getNeighboursList(x, y, bitmap);
+
+                    // menampung nilai setelah menerapkan sobel mask X
+                    // pada titik (x,y)
+                    result = getSobelValue(neighboursList, "laplacian");
+
+                    // memasukkan hasil sobel X di titik (x,y) dalam list
+                    resultSobelX.Add(result);
+
+                    // kondisi untuk filter nilai harus dalam range 0 - 255
+                    if (result < 0)
+                    {
+                        result = 0;
+                    }
+                    else if (result > 255)
+                    {
+                        result = 255;
+                    }
+
+                    // set nilai pixel baru setelah dikenakan sobel mask X pada titik (x,y)
+                    laplacian.SetPixel(x, y, Color.FromArgb(result, result, result));
+                }
+
+                // set nilai progress bar
+                progressBar.Value = y;
+            }
+
+            // menampilkan gambar hasil sobel X dalam picture box
+            pbDTDes.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbDTDes.Image = laplacian;
+        }
+
+        // sharpness
+        private void button23_Click(object sender, EventArgs e)
+        {
+            Bitmap bitmap = new Bitmap(pbDTsrc.Image);
+            Bitmap result = new Bitmap(bitmap.Width,bitmap.Height);
+            progressBar.Minimum = 0;
+            progressBar.Maximum = bitmap.Width - 1;
+
+            progressBar.Value = 0;
+            for (int x = 1; x < bitmap.Width - 1; x++)
+            {
+                for (int y = 1; y < bitmap.Height - 1; y++)
+                {
+                    Color w = bitmap.GetPixel(x, y);
+                    int xg = w.R;
+                    Color w1 = bitmap.GetPixel(x - 1, y - 1);
+                    Color w2 = bitmap.GetPixel(x - 1, y);
+                    Color w3 = bitmap.GetPixel(x - 1, y + 1);
+                    Color w4 = bitmap.GetPixel(x, y - 1);
+                    Color w5 = bitmap.GetPixel(x, y);
+                    Color w6 = bitmap.GetPixel(x, y + 1);
+                    Color w7 = bitmap.GetPixel(x + 1, y - 1);
+                    Color w8 = bitmap.GetPixel(x + 1, y);
+                    Color w9 = bitmap.GetPixel(x + 1, y + 1);
+                    int x1 = w1.R;
+                    int x2 = w2.R;
+                    int x3 = w3.R;
+                    int x4 = w4.R;
+                    int x5 = w5.R;
+                    int x6 = w6.R;
+                    int x7 = w7.R;
+                    int x8 = w8.R;
+                    int x9 = w9.R;
+                    int xt1 = (int)((x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9) / 9);
+                    int xt2 = (int)(-x1 - 2 * x2 - x3 + x7 + 2 * x8 + x9);
+                    int xt3 = (int)(-x1 - 2 * x4 - x7 + x3 + 2 * x6
+                   + x9);
+                    int xb = (int)(xt1 + xt2 + xt3);
+                    if (xb < 0) xb = -xb;
+                    if (xb > 255) xb = 255;
+                    Color wb = Color.FromArgb(xb, xb, xb);
+                    result.SetPixel(x, y, wb);
+                }
+                progressBar.Value = x;
+            }
+                
+            pbDTDes.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbDTDes.Image = result;
+        }
+
+        
 
 
 
