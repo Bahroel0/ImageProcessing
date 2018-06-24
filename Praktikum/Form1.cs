@@ -1819,9 +1819,10 @@ namespace Praktikum
                 }
                 progressBar.Value = x;
             }
-            progressBar.Value = 0;
+            //progressBar.Value = 0;
             pbDTDes.SizeMode = PictureBoxSizeMode.StretchImage;
-            pbDTDes.Image = result;
+            pbDTDes.Image = result;
+
         }
 
         // btn_prewitX
@@ -2052,26 +2053,394 @@ namespace Praktikum
             }
                 
             pbDTDes.SizeMode = PictureBoxSizeMode.StretchImage;
-            pbDTDes.Image = result;
+            pbDTDes.Image = result;
+
         }
 
+
+
+
+        // EKSTRAKSI WARNA
+        int[] avRedimg1 = new int[16];
+        int[] avGreenimg1 = new int[16];
+        int[] avBlueimg1 = new int[16];
+        int[] avRedimg2 = new int[16];
+        int[] avGreenimg2 = new int[16];
+        int[] avBlueimg2 = new int[16];
+        int[] avRedimg3 = new int[16];
+        int[] avGreenimg3 = new int[16];
+        int[] avBlueimg3 = new int[16];
+        int[] avRedimg4 = new int[16];
+        int[] avGreenimg4 = new int[16];
+        int[] avBlueimg4 = new int[16];
+        private void btn_load_img1_Click(object sender, EventArgs e)
+        {
+            DialogResult d = openFileDialog1.ShowDialog();
+            if (d == DialogResult.OK)
+            {
+                pb_img1.Image = new Bitmap(pb_img1.Width, pb_img1.Height);
+                objBitmap = new Bitmap(openFileDialog1.FileName);
+                pb_img1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pb_img1.Image = objBitmap;
+            }
+        }
+
+        private void btn_his_img1_Click(object sender, EventArgs e)
+        {
+            Bitmap ob = (Bitmap)pb_img1.Image;
+            int[] binRed = new int[256];
+            int[] binGreen = new int[256];
+            int[] binBlue = new int[256];
+            int red, green, blue;
+            Color color;
+
+            for (int x = 0; x < ob.Width; x++)
+                for (int y = 0; y < ob.Height; y++)
+                {
+                    color = ob.GetPixel(x, y);
+                    red = color.R;
+                    green = color.G;
+                    blue = color.B;
+                    binRed[red]++;
+                    binGreen[green]++;
+                    binBlue[blue]++;
+                }
+
+            int a = -1;
+            int count = 0;
+            int sumRed = 0;
+            int sumGreen = 0;
+            int sumBlue = 0;
+            for (int b = 0; b < 255; b++)
+            {
+
+                if (b % 16 == 0)
+                {
+                    a++;
+                    sumRed = 0; sumGreen = 0; sumBlue = 0;
+                }
+                sumRed += binRed[b];
+                sumGreen += binGreen[b];
+                sumBlue += binBlue[b];
+                if (b % 15 == 0)
+                {
+                    avRedimg1[a] = sumRed / 16;
+                    avGreenimg1[a] = sumGreen / 16;
+                    avBlueimg1[a] = sumBlue / 16;
+                    
+                }
+                
+            }
+
+                // unset the histogram chart
+                for (int i = 0; i < 16; i++)
+                {
+                    this.ch_img1_red.Series["R"].Points.Clear();
+                    this.ch_img1_green.Series["G"].Points.Clear();
+                    this.ch_img1_blue.Series["B"].Points.Clear();
+                }
+
+
+
+            // set the histogram chart
+            for (int i = 0; i < 16; i++)
+            {
+                this.ch_img1_red.Series["R"].Points.AddXY(i, avRedimg1[i]);
+                this.ch_img1_green.Series["G"].Points.AddXY(i, avGreenimg1[i]);
+                this.ch_img1_blue.Series["B"].Points.AddXY(i, avBlueimg1[i]);
+            }
+        }
+
+        private void btn_load_img2_Click(object sender, EventArgs e)
+        {
+            DialogResult d = openFileDialog1.ShowDialog();
+            if (d == DialogResult.OK)
+            {
+                pb_img2.Image = new Bitmap(pb_img2.Width, pb_img2.Height);
+                objBitmap = new Bitmap(openFileDialog1.FileName);
+                pb_img2.SizeMode = PictureBoxSizeMode.StretchImage;
+                pb_img2.Image = objBitmap;
+            }
+        }
+
+        private void btn_his_img2_Click(object sender, EventArgs e)
+        {
+            Bitmap ob = (Bitmap)pb_img2.Image;
+
+            int[] binRed = new int[256];
+            int[] binGreen = new int[256];
+            int[] binBlue = new int[256];
+            int red, green, blue;
+            Color color;
+
+            for (int x = 0; x < ob.Width; x++)
+                for (int y = 0; y < ob.Height; y++)
+                {
+                    color = ob.GetPixel(x, y);
+                    red = color.R;
+                    green = color.G;
+                    blue = color.B;
+                    binRed[red]++;
+                    binGreen[green]++;
+                    binBlue[blue]++;
+                }
+
+            int a = -1;
+            int count = 0;
+            int sumRed = 0;
+            int sumGreen = 0;
+            int sumBlue = 0;
+            for (int b = 0; b < 255; b++)
+            {
+
+                if (b % 16 == 0)
+                {
+                    a++;
+                    sumRed = 0; sumGreen = 0; sumBlue = 0;
+                }
+                sumRed += binRed[b];
+                sumGreen += binGreen[b];
+                sumBlue += binBlue[b];
+                if (b % 15 == 0)
+                {
+                    avRedimg2[a] = sumRed / 16;
+                    avGreenimg2[a] = sumGreen / 16;
+                    avBlueimg2[a] = sumBlue / 16;
+
+                }
+
+            }
+
+            // unset the histogram chart
+            for (int i = 0; i < 16; i++)
+            {
+                this.ch_img2_red.Series["R"].Points.Clear();
+                this.ch_img2_green.Series["G"].Points.Clear();
+                this.ch_img2_blue.Series["B"].Points.Clear();
+            }
+
+
+
+            // set the histogram chart
+            for (int i = 0; i < 16; i++)
+            {
+                this.ch_img2_red.Series["R"].Points.AddXY(i, avRedimg2[i]);
+                this.ch_img2_green.Series["G"].Points.AddXY(i, avGreenimg2[i]);
+                this.ch_img2_blue.Series["B"].Points.AddXY(i, avBlueimg2[i]);
+            }
+        }
+
+        private void btn_load_img3_Click(object sender, EventArgs e)
+        {
+            DialogResult d = openFileDialog1.ShowDialog();
+            if (d == DialogResult.OK)
+            {
+                pb_img3.Image = new Bitmap(pb_img3.Width, pb_img3.Height);
+                objBitmap = new Bitmap(openFileDialog1.FileName);
+                pb_img3.SizeMode = PictureBoxSizeMode.StretchImage;
+                pb_img3.Image = objBitmap;
+            }
+        }
+
+        private void btn_his_img3_Click(object sender, EventArgs e)
+        {
+            Bitmap ob = (Bitmap)pb_img3.Image;
+
+            int[] binRed = new int[256];
+            int[] binGreen = new int[256];
+            int[] binBlue = new int[256];
+            
+            int red, green, blue;
+            Color color;
+
+            for (int x = 0; x < ob.Width; x++)
+                for (int y = 0; y < ob.Height; y++)
+                {
+                    color = ob.GetPixel(x, y);
+                    red = color.R;
+                    green = color.G;
+                    blue = color.B;
+                    binRed[red]++;
+                    binGreen[green]++;
+                    binBlue[blue]++;
+                }
+
+            int a = -1;
+            int count = 0;
+            int sumRed = 0;
+            int sumGreen = 0;
+            int sumBlue = 0;
+            for (int b = 0; b < 255; b++)
+            {
+
+                if (b % 16 == 0)
+                {
+                    a++;
+                    sumRed = 0; sumGreen = 0; sumBlue = 0;
+                }
+                sumRed += binRed[b];
+                sumGreen += binGreen[b];
+                sumBlue += binBlue[b];
+                if (b % 15 == 0)
+                {
+                    avRedimg3[a] = sumRed / 16;
+                    avGreenimg3[a] = sumGreen / 16;
+                    avBlueimg3[a] = sumBlue / 16;
+
+                }
+
+            }
+
+            // unset the histogram chart
+            for (int i = 0; i < 16; i++)
+            {
+                this.ch_img3_red.Series["R"].Points.Clear();
+                this.ch_img3_green.Series["G"].Points.Clear();
+                this.ch_img3_blue.Series["B"].Points.Clear();
+            }
+
+
+
+            // set the histogram chart
+            for (int i = 0; i < 16; i++)
+            {
+                this.ch_img3_red.Series["R"].Points.AddXY(i, avRedimg3[i]);
+                this.ch_img3_green.Series["G"].Points.AddXY(i, avGreenimg3[i]);
+                this.ch_img3_blue.Series["B"].Points.AddXY(i, avBlueimg3[i]);
+            }
+        }
+
+        private void btn_load_img4_Click(object sender, EventArgs e)
+        {
+            DialogResult d = openFileDialog1.ShowDialog();
+            if (d == DialogResult.OK)
+            {
+                pb_img4.Image = new Bitmap(pb_img4.Width, pb_img4.Height);
+                objBitmap = new Bitmap(openFileDialog1.FileName);
+                pb_img4.SizeMode = PictureBoxSizeMode.StretchImage;
+                pb_img4.Image = objBitmap;
+            }
+        }
+
+        private void btn_his_img4_Click(object sender, EventArgs e)
+        {
+            Bitmap ob = (Bitmap)pb_img4.Image;
+
+            int[] binRed = new int[256];
+            int[] binGreen = new int[256];
+            int[] binBlue = new int[256];
+            int red, green, blue;
+            Color color;
+
+            for (int x = 0; x < ob.Width; x++)
+                for (int y = 0; y < ob.Height; y++)
+                {
+                    color = ob.GetPixel(x, y);
+                    red = color.R;
+                    green = color.G;
+                    blue = color.B;
+                    binRed[red]++;
+                    binGreen[green]++;
+                    binBlue[blue]++;
+                }
+
+            int a = -1;
+            int count = 0;
+            int sumRed = 0;
+            int sumGreen = 0;
+            int sumBlue = 0;
+            for (int b = 0; b < 255; b++)
+            {
+
+                if (b % 16 == 0)
+                {
+                    a++;
+                    sumRed = 0; sumGreen = 0; sumBlue = 0;
+                }
+                sumRed += binRed[b];
+                sumGreen += binGreen[b];
+                sumBlue += binBlue[b];
+                if (b % 15 == 0)
+                {
+                    avRedimg4[a] = sumRed / 16;
+                    avGreenimg4[a] = sumGreen / 16;
+                    avBlueimg4[a] = sumBlue / 16;
+
+                }
+
+            }
+
+            // unset the histogram chart
+            for (int i = 0; i < 16; i++)
+            {
+                this.ch_img4_red.Series["R"].Points.Clear();
+                this.ch_img4_green.Series["G"].Points.Clear();
+                this.ch_img4_blue.Series["B"].Points.Clear();
+            }
+
+
+
+            // set the histogram chart
+            for (int i = 0; i < 16; i++)
+            {
+                this.ch_img4_red.Series["R"].Points.AddXY(i, avRedimg4[i]);
+                this.ch_img4_green.Series["G"].Points.AddXY(i, avGreenimg4[i]);
+                this.ch_img4_blue.Series["B"].Points.AddXY(i, avBlueimg4[i]);
+            }
+        }
+
+        //btn compare clicked
+        private void btn_compare_Click(object sender, EventArgs e)
+        {
+            int selisih41 = Compare(avRedimg1, avRedimg4, avGreenimg1,avGreenimg4,avBlueimg1,avBlueimg4);
+            int selisih42 = Compare(avRedimg2, avRedimg4, avGreenimg2, avGreenimg4, avBlueimg2, avBlueimg4);
+            int selisih43 = Compare(avRedimg3, avRedimg4, avGreenimg3, avGreenimg4, avBlueimg3, avBlueimg4);
+
+            if (selisih41 < selisih42 && selisih41 < selisih43)
+            {
+                MessageBox.Show("Image 1 paling mirip");
+            }
+            else if (selisih42 < selisih41 && selisih42 < selisih43)
+            {
+                MessageBox.Show("Image 2 paling mirip");
+            }
+            else if (selisih43 < selisih41 && selisih43 < selisih42)
+            {
+                MessageBox.Show("Image 3 paling mirip");
+            }
+
+            
+
+        }
+
+
+        private int Compare(int[] rx, int[] r4,int[] gx, int[] g4,int[] bx, int[] b4)
+        {
+            int value = 0;
+            int sumr=0, sumg=0, sumb=0;
+            for (int i = 0; i < 16; i++)
+            {
+                sumr += Math.Abs(rx[i] - r4[i]);
+                sumg += Math.Abs(gx[i] - g4[i]); 
+                sumb += Math.Abs(bx[i] - b4[i]);
+            }
+
+            value = (sumr + sumg + sumb) / 3;
+            return value;
+        }
+
+
+
+
+
+
+
+
+
+
+
         
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
 
     
     }
