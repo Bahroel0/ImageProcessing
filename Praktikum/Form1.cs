@@ -2140,7 +2140,17 @@ namespace Praktikum
                     this.ch_img1_blue.Series["B"].Points.Clear();
                 }
 
+                label_hr_img1.Text = "|  " +avRedimg1[0] + "  |  " + avRedimg1[1] + "  |  " + avRedimg1[2] + "  |  " + avRedimg1[3] + "  |  " + avRedimg1[4] + "  |  " +
+                    avRedimg1[5] + "  |  " + avRedimg1[6] + "  |  " + avRedimg1[7] + "  |  " + avRedimg1[8] + "  |  " + avRedimg1[9] + "  |  " + avRedimg1[10] + "  |  " +
+                    avRedimg1[11] + "  |  " + avRedimg1[12] + "  |  " + avRedimg1[13] + "  |  " + avRedimg1[14] + "  |  " + avRedimg1[15] + "  |";
 
+                label_hg_img1.Text = "|  " + avGreenimg1[0] + "  |  " + avGreenimg1[1] + "  |  " + avGreenimg1[2] + "  |  " + avGreenimg1[3] + "  |  " + avGreenimg1[4] + "  |  " +
+                        avGreenimg1[5] + "  |  " + avGreenimg1[6] + "  |  " + avGreenimg1[7] + "  |  " + avGreenimg1[8] + "  |  " + avGreenimg1[9] + "  |  " + avGreenimg1[10] + "  |  " +
+                        avGreenimg1[11] + "  |  " + avGreenimg1[12] + "  |  " + avGreenimg1[13] + "  |  " + avGreenimg1[14] + "  |  " + avGreenimg1[15] + "  |";
+
+                label_hb_img1.Text = "|  " + avBlueimg1[0] + "  |  " + avBlueimg1[1] + "  |  " + avBlueimg1[2] + "  |  " + avBlueimg1[3] + "  |  " + avBlueimg1[4] + "  |  " +
+                        avBlueimg1[5] + "  |  " + avBlueimg1[6] + "  |  " + avBlueimg1[7] + "  |  " + avBlueimg1[8] + "  |  " + avBlueimg1[9] + "  |  " + avBlueimg1[10] + "  |  " +
+                        avBlueimg1[11] + "  |  " + avBlueimg1[12] + "  |  " + avBlueimg1[13] + "  |  " + avBlueimg1[14] + "  |  " + avBlueimg1[15] + "  |";
 
             // set the histogram chart
             for (int i = 0; i < 16; i++)
@@ -2219,6 +2229,17 @@ namespace Praktikum
                 this.ch_img2_blue.Series["B"].Points.Clear();
             }
 
+            label_hr_img2.Text = "|  " + avRedimg2[0] + "  |  " + avRedimg2[1] + "  |  " + avRedimg2[2] + "  |  " + avRedimg2[3] + "  |  " + avRedimg2[4] + "  |  " +
+                    avRedimg2[5] + "  |  " + avRedimg2[6] + "  |  " + avRedimg2[7] + "  |  " + avRedimg2[8] + "  |  " + avRedimg2[9] + "  |  " + avRedimg2[10] + "  |  " +
+                    avRedimg2[11] + "  |  " + avRedimg2[12] + "  |  " + avRedimg2[13] + "  |  " + avRedimg2[14] + "  |  " + avRedimg2[15] + "  |";
+
+            label_hg_img2.Text = "|  " + avGreenimg2[0] + "  |  " + avGreenimg2[1] + "  |  " + avGreenimg2[2] + "  |  " + avGreenimg2[3] + "  |  " + avGreenimg2[4] + "  |  " +
+                    avGreenimg2[5] + "  |  " + avGreenimg2[6] + "  |  " + avGreenimg2[7] + "  |  " + avGreenimg2[8] + "  |  " + avGreenimg2[9] + "  |  " + avGreenimg2[10] + "  |  " +
+                    avGreenimg2[11] + "  |  " + avGreenimg2[12] + "  |  " + avGreenimg2[13] + "  |  " + avGreenimg2[14] + "  |  " + avGreenimg2[15] + "  |";
+
+            label_hb_img2.Text = "|  " + avBlueimg2[0] + "  |  " + avBlueimg2[1] + "  |  " + avBlueimg2[2] + "  |  " + avBlueimg2[3] + "  |  " + avBlueimg2[4] + "  |  " +
+                    avBlueimg2[5] + "  |  " + avBlueimg2[6] + "  |  " + avBlueimg2[7] + "  |  " + avBlueimg2[8] + "  |  " + avBlueimg2[9] + "  |  " + avBlueimg2[10] + "  |  " +
+                    avBlueimg2[11] + "  |  " + avBlueimg2[12] + "  |  " + avBlueimg2[13] + "  |  " + avBlueimg2[14] + "  |  " + avBlueimg2[15] + "  |";
 
 
             // set the histogram chart
@@ -2300,6 +2321,17 @@ namespace Praktikum
             }
 
 
+            label_hr_img3.Text = "|  " + avRedimg3[0] + "  |  " + avRedimg3[1] + "  |  " + avRedimg3[2] + "  |  " + avRedimg3[3] + "  |  " + avRedimg3[4] + "  |  " +
+                    avRedimg3[5] + "  |  " + avRedimg3[6] + "  |  " + avRedimg3[7] + "  |  " + avRedimg3[8] + "  |  " + avRedimg3[9] + "  |  " + avRedimg3[10] + "  |  " +
+                    avRedimg3[11] + "  |  " + avRedimg3[12] + "  |  " + avRedimg3[13] + "  |  " + avRedimg3[14] + "  |  " + avRedimg3[15] + "  |";
+
+            label_hg_img3.Text = "|  " + avGreenimg3[0] + "  |  " + avGreenimg3[1] + "  |  " + avGreenimg3[2] + "  |  " + avGreenimg3[3] + "  |  " + avGreenimg3[4] + "  |  " +
+                    avGreenimg3[5] + "  |  " + avGreenimg3[6] + "  |  " + avGreenimg3[7] + "  |  " + avGreenimg3[8] + "  |  " + avGreenimg3[9] + "  |  " + avGreenimg3[10] + "  |  " +
+                    avGreenimg3[11] + "  |  " + avGreenimg3[12] + "  |  " + avGreenimg3[13] + "  |  " + avGreenimg3[14] + "  |  " + avGreenimg3[15] + "  |";
+
+            label_hb_img3.Text = "|  " + avBlueimg3[0] + "  |  " + avBlueimg3[1] + "  |  " + avBlueimg3[2] + "  |  " + avBlueimg3[3] + "  |  " + avBlueimg3[4] + "  |  " +
+                    avBlueimg3[5] + "  |  " + avBlueimg3[6] + "  |  " + avBlueimg3[7] + "  |  " + avBlueimg3[8] + "  |  " + avBlueimg3[9] + "  |  " + avBlueimg3[10] + "  |  " +
+                    avBlueimg3[11] + "  |  " + avBlueimg3[12] + "  |  " + avBlueimg3[13] + "  |  " + avBlueimg3[14] + "  |  " + avBlueimg3[15] + "  |";
 
             // set the histogram chart
             for (int i = 0; i < 16; i++)
@@ -2378,7 +2410,17 @@ namespace Praktikum
                 this.ch_img4_blue.Series["B"].Points.Clear();
             }
 
+            label_hr_img4.Text = "|  " + avRedimg4[0] + "  |  " + avRedimg4[1] + "  |  " + avRedimg4[2] + "  |  " + avRedimg4[3] + "  |  " + avRedimg4[4] + "  |  " +
+                    avRedimg4[5] + "  |  " + avRedimg4[6] + "  |  " + avRedimg4[7] + "  |  " + avRedimg4[8] + "  |  " + avRedimg4[9] + "  |  " + avRedimg4[10] + "  |  " +
+                    avRedimg4[11] + "  |  " + avRedimg4[12] + "  |  " + avRedimg4[13] + "  |  " + avRedimg4[14] + "  |  " + avRedimg4[15] + "  |";
 
+            label_hg_img4.Text = "|  " + avGreenimg4[0] + "  |  " + avGreenimg4[1] + "  |  " + avGreenimg4[2] + "  |  " + avGreenimg4[3] + "  |  " + avGreenimg4[4] + "  |  " +
+                    avGreenimg4[5] + "  |  " + avGreenimg4[6] + "  |  " + avGreenimg4[7] + "  |  " + avGreenimg4[8] + "  |  " + avGreenimg4[9] + "  |  " + avGreenimg4[10] + "  |  " +
+                    avGreenimg4[11] + "  |  " + avGreenimg4[12] + "  |  " + avGreenimg4[13] + "  |  " + avGreenimg4[14] + "  |  " + avGreenimg4[15] + "  |";
+
+            label_hb_img4.Text = "|  " + avBlueimg4[0] + "  |  " + avBlueimg4[1] + "  |  " + avBlueimg4[2] + "  |  " + avBlueimg4[3] + "  |  " + avBlueimg4[4] + "  |  " +
+                    avBlueimg4[5] + "  |  " + avBlueimg4[6] + "  |  " + avBlueimg4[7] + "  |  " + avBlueimg4[8] + "  |  " + avBlueimg4[9] + "  |  " + avBlueimg4[10] + "  |  " +
+                    avBlueimg4[11] + "  |  " + avBlueimg4[12] + "  |  " + avBlueimg4[13] + "  |  " + avBlueimg4[14] + "  |  " + avBlueimg4[15] + "  |";
 
             // set the histogram chart
             for (int i = 0; i < 16; i++)
@@ -2396,17 +2438,28 @@ namespace Praktikum
             int selisih42 = Compare(avRedimg2, avRedimg4, avGreenimg2, avGreenimg4, avBlueimg2, avBlueimg4);
             int selisih43 = Compare(avRedimg3, avRedimg4, avGreenimg3, avGreenimg4, avBlueimg3, avBlueimg4);
 
+            label_jarak14.Text = selisih41+"";
+            label_jarak24.Text = selisih42+"";
+            label_jarak34.Text = selisih43+"";
+
             if (selisih41 < selisih42 && selisih41 < selisih43)
             {
                 MessageBox.Show("Image 1 paling mirip");
+                pb_image_hasil_ekstraksi.SizeMode = PictureBoxSizeMode.StretchImage;
+                pb_image_hasil_ekstraksi.Image = pb_img1.Image;
+   
             }
             else if (selisih42 < selisih41 && selisih42 < selisih43)
             {
                 MessageBox.Show("Image 2 paling mirip");
+                pb_image_hasil_ekstraksi.SizeMode = PictureBoxSizeMode.StretchImage;
+                pb_image_hasil_ekstraksi.Image = pb_img2.Image;
             }
             else if (selisih43 < selisih41 && selisih43 < selisih42)
             {
                 MessageBox.Show("Image 3 paling mirip");
+                pb_image_hasil_ekstraksi.SizeMode = PictureBoxSizeMode.StretchImage;
+                pb_image_hasil_ekstraksi.Image = pb_img3.Image;
             }
 
             
@@ -2429,19 +2482,426 @@ namespace Praktikum
             return value;
         }
 
-
-
-
-
-
-
-
-
-
-
+        // ekstraksi bentuk
+        int[,] constant = new int[,] { 
+        { 1,1,1,1,1,1,1,1,1,1 },
+        { 1,1,1,1,1,1,1,1,1,1 },
+        { 1,1,1,1,1,1,1,1,1,1 },
+        { 1,1,1,1,1,1,1,1,1,1 },
+        { 1,1,1,1,1,1,1,1,1,1 },
+        { 1,1,1,1,1,1,1,1,1,1 },
+        { 1,1,1,1,1,1,1,1,1,1 },
+        { 1,1,1,1,1,1,1,1,1,1 },
+        { 1,1,1,1,1,1,1,1,1,1 }
+        };
+       
         
+        int[] avValueimg1 = new int[16];
+        int[] avValueimg2 = new int[16];
+        int[] avValueimg3 = new int[16];
+        int[] avValueimg4 = new int[16];
+
+        int[,] binValueimg1;
+        int[,] binValueimg2;
+        int[,] binValueimg3;
+        int[,] binValueimg4;
+        private void btn_load_img_1_Click(object sender, EventArgs e)
+        {
+            DialogResult d = openFileDialog1.ShowDialog();
+            if (d == DialogResult.OK)
+            {
+                pb_img_1.Image = new Bitmap(pb_img_1.Width, pb_img_1.Height);
+                objBitmap = new Bitmap(openFileDialog1.FileName);
+                pb_img_1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pb_img_1.Image = objBitmap;
+            }
+        }
+
+        private void btn_load_img_2_Click(object sender, EventArgs e)
+        {
+            DialogResult d = openFileDialog1.ShowDialog();
+            if (d == DialogResult.OK)
+            {
+                pb_img_2.Image = new Bitmap(pb_img_2.Width, pb_img_2.Height);
+                objBitmap = new Bitmap(openFileDialog1.FileName);
+                pb_img_2.SizeMode = PictureBoxSizeMode.StretchImage;
+                pb_img_2.Image = objBitmap;
+            }
+        }
+
+        private void btn_load_img_3_Click(object sender, EventArgs e)
+        {
+            DialogResult d = openFileDialog1.ShowDialog();
+            if (d == DialogResult.OK)
+            {
+                pb_img_3.Image = new Bitmap(pb_img_3.Width, pb_img_3.Height);
+                objBitmap = new Bitmap(openFileDialog1.FileName);
+                pb_img_3.SizeMode = PictureBoxSizeMode.StretchImage;
+                pb_img_3.Image = objBitmap;
+            }
+        }
+
+        private void btn_load_img_4_Click(object sender, EventArgs e)
+        {
+            DialogResult d = openFileDialog1.ShowDialog();
+            if (d == DialogResult.OK)
+            {
+                pb_img_4.Image = new Bitmap(pb_img_4.Width, pb_img_4.Height);
+                objBitmap = new Bitmap(openFileDialog1.FileName);
+                pb_img_4.SizeMode = PictureBoxSizeMode.StretchImage;
+                pb_img_4.Image = objBitmap;
+            }
+        }
+
+        private void btn_his_img_1_Click(object sender, EventArgs e)
+        {
+            Bitmap ob = (Bitmap)pb_img_1.Image;
+            
+            binValueimg1 = new int[pb_img_1.Width, pb_img_1.Height];
+            int red, green, blue;
+            Color color;
+
+            for (int x = 0; x < ob.Width; x++)
+                for (int y = 0; y < ob.Height; y++)
+                {
+                    color = ob.GetPixel(x, y);
+                    red = color.R;
+                    green = color.G;
+                    blue = color.B;
+                    if (red == 255 && green == 255 && blue == 255)
+                    {
+                        binValueimg1[x, y] = 0;
+                    }
+                    else
+                    {
+                        binValueimg1[x, y] = 1;
+                    }
+                }
+
+            int[,] vektor = new int[10,10];
+            int sum = 0;
+            int x1=0,y1=0;
+            Bitmap objHasil = new Bitmap(10,10);
+            
+            for (int x = 0; x < binValueimg1.GetLength(0); x++)
+            {
+                sum = 0;
+                for (int y = 0; y < binValueimg1.GetLength(1); y++)
+                {
+                    if (y % 10 == 9)
+                    {
+                        sum += binValueimg1[x, y];
+                        vektor[x1,y1] += sum;
+                        y1++;
+                        sum = 0;
+                    }
+                    else
+                    {
+                        sum += binValueimg1[x, y];
+                    }
+                }
+                if (x % 10 == 9)
+                {
+                    x1++;
+                    sum = 0;
+                }
+                sum = 0;
+                y1 = 0;
+            }
+
+            for (int x = 0; x < vektor.GetLength(0); x++)
+                for (int y = 0; y < vektor.GetLength(1); y++)
+                {
+                    Color w;
+                    if(vektor[x,y] < 40){
+                        w = Color.FromArgb(255, 255, 255);
+                    }
+                    else
+                    {
+                        w = Color.FromArgb(0, 0, 0);
+                    }
+                    // pixel yang sudah diambil disalin ke image baru
+                    objHasil.SetPixel(x, y, w);
+                }
+
+            pb_img_1_hasil.SizeMode = PictureBoxSizeMode.StretchImage;
+            pb_img_1_hasil.Image = objHasil;
+        }
+
+        private void btn_his_img_2_Click(object sender, EventArgs e)
+        {
+            Bitmap ob = (Bitmap)pb_img_2.Image;
+
+            binValueimg2 = new int[pb_img_2.Width, pb_img_2.Height];
+            int red, green, blue;
+            Color color;
+
+            for (int x = 0; x < ob.Width; x++)
+                for (int y = 0; y < ob.Height; y++)
+                {
+                    color = ob.GetPixel(x, y);
+                    red = color.R;
+                    green = color.G;
+                    blue = color.B;
+                    if (red == 255 && green == 255 && blue == 255)
+                    {
+                        binValueimg2[x, y] = 0;
+                    }
+                    else
+                    {
+                        binValueimg2[x, y] = 1;
+                    }
+                }
+
+            int[,] vektor = new int[10, 10];
+            int sum = 0;
+            int x1 = 0, y1 = 0;
+            Bitmap objHasil = new Bitmap(10, 10);
+
+            for (int x = 0; x < binValueimg2.GetLength(0); x++)
+            {
+                sum = 0;
+                for (int y = 0; y < binValueimg2.GetLength(1); y++)
+                {
+                    if (y % 10 == 9)
+                    {
+                        sum += binValueimg2[x, y];
+                        vektor[x1, y1] += sum;
+                        y1++;
+                        sum = 0;
+                    }
+                    else
+                    {
+                        sum += binValueimg2[x, y];
+                    }
+                }
+                if (x % 10 == 9)
+                {
+                    x1++;
+                    sum = 0;
+                }
+                sum = 0;
+                y1 = 0;
+            }
+
+            for (int x = 0; x < vektor.GetLength(0); x++)
+                for (int y = 0; y < vektor.GetLength(1); y++)
+                {
+                    Color w;
+                    if (vektor[x, y] < 40)
+                    {
+                        w = Color.FromArgb(255, 255, 255);
+                    }
+                    else
+                    {
+                        w = Color.FromArgb(0, 0, 0);
+                    }
+                    // pixel yang sudah diambil disalin ke image baru
+                    objHasil.SetPixel(x, y, w);
+                }
+
+            pb_img_2_hasil.SizeMode = PictureBoxSizeMode.StretchImage;
+            pb_img_2_hasil.Image = objHasil;
+
+            
+        }
+
+        private void btn_his_img_3_Click(object sender, EventArgs e)
+        {
+            Bitmap ob = (Bitmap)pb_img_3.Image;
+
+            binValueimg3 = new int[pb_img_3.Width, pb_img_3.Height];
+            int red, green, blue;
+            Color color;
+
+            for (int x = 0; x < ob.Width; x++)
+                for (int y = 0; y < ob.Height; y++)
+                {
+                    color = ob.GetPixel(x, y);
+                    red = color.R;
+                    green = color.G;
+                    blue = color.B;
+                    if (red == 255 && green == 255 && blue == 255)
+                    {
+                        binValueimg3[x, y] = 0;
+                    }
+                    else
+                    {
+                        binValueimg3[x, y] = 1;
+                    }
+                }
+
+            int[,] vektor = new int[10, 10];
+            int sum = 0;
+            int x1 = 0, y1 = 0;
+            Bitmap objHasil = new Bitmap(10, 10);
+
+            for (int x = 0; x < binValueimg3.GetLength(0); x++)
+            {
+                sum = 0;
+                for (int y = 0; y < binValueimg3.GetLength(1); y++)
+                {
+                    if (y % 10 == 9)
+                    {
+                        sum += binValueimg3[x, y];
+                        vektor[x1, y1] += sum;
+                        y1++;
+                        sum = 0;
+                    }
+                    else
+                    {
+                        sum += binValueimg3[x, y];
+                    }
+                }
+                if (x % 10 == 9)
+                {
+                    x1++;
+                    sum = 0;
+                }
+                sum = 0;
+                y1 = 0;
+            }
+
+            for (int x = 0; x < vektor.GetLength(0); x++)
+                for (int y = 0; y < vektor.GetLength(1); y++)
+                {
+                    Color w;
+                    if (vektor[x, y] < 40)
+                    {
+                        w = Color.FromArgb(255, 255, 255);
+                    }
+                    else
+                    {
+                        w = Color.FromArgb(0, 0, 0);
+                    }
+                    // pixel yang sudah diambil disalin ke image baru
+                    objHasil.SetPixel(x, y, w);
+                }
+
+            pb_img_3_hasil.SizeMode = PictureBoxSizeMode.StretchImage;
+            pb_img_3_hasil.Image = objHasil;
+        }
+
+        private void btn_his_img_4_Click(object sender, EventArgs e)
+        {
+            Bitmap ob = (Bitmap)pb_img_4.Image;
+
+            binValueimg4 = new int[pb_img_4.Width, pb_img_4.Height];
+            int red, green, blue;
+            Color color;
+
+            for (int x = 0; x < ob.Width; x++)
+                for (int y = 0; y < ob.Height; y++)
+                {
+                    color = ob.GetPixel(x, y);
+                    red = color.R;
+                    green = color.G;
+                    blue = color.B;
+                    if (red == 255 && green == 255 && blue == 255)
+                    {
+                        binValueimg4[x, y] = 0;
+                    }
+                    else
+                    {
+                        binValueimg4[x, y] = 1;
+                    }
+                }
+
+            int[,] vektor = new int[10, 10];
+            int sum = 0;
+            int x1 = 0, y1 = 0;
+            Bitmap objHasil = new Bitmap(10, 10);
+
+            for (int x = 0; x < binValueimg4.GetLength(0); x++)
+            {
+                sum = 0;
+                for (int y = 0; y < binValueimg4.GetLength(1); y++)
+                {
+                    if (y % 10 == 9)
+                    {
+                        sum += binValueimg4[x, y];
+                        vektor[x1, y1] += sum;
+                        y1++;
+                        sum = 0;
+                    }
+                    else
+                    {
+                        sum += binValueimg4[x, y];
+                    }
+                }
+                if (x % 10 == 9)
+                {
+                    x1++;
+                    sum = 0;
+                }
+                sum = 0;
+                y1 = 0;
+            }
+
+            for (int x = 0; x < vektor.GetLength(0); x++)
+                for (int y = 0; y < vektor.GetLength(1); y++)
+                {
+                    Color w;
+                    if (vektor[x, y] < 40)
+                    {
+                        w = Color.FromArgb(255, 255, 255);
+                    }
+                    else
+                    {
+                        w = Color.FromArgb(0, 0, 0);
+                    }
+                    // pixel yang sudah diambil disalin ke image baru
+                    objHasil.SetPixel(x, y, w);
+                }
+
+            pb_img_4_hasil.SizeMode = PictureBoxSizeMode.StretchImage;
+            pb_img_4_hasil.Image = objHasil;    
+        }
+
+        private void btn_compare_bentuk_Click(object sender, EventArgs e)
+        {
+            int selisih41 = CompareBentuk(binValueimg4,binValueimg1);
+            int selisih42 = CompareBentuk(binValueimg4, binValueimg2);
+            int selisih43 = CompareBentuk(binValueimg4, binValueimg3);
+
+            label_jarak_img14.Text = selisih41 + "";
+            label_jarak_img24.Text = selisih42 + "";
+            label_jarak_img34.Text = selisih43 + "";
 
 
-    
+            if (selisih41 < selisih42 && selisih41 < selisih43)
+            {
+                MessageBox.Show("Image 1 paling mirip");
+                pictureBox22.Image = pb_img_1.Image;
+            }
+            else if (selisih42 < selisih41 && selisih42 < selisih43)
+            {
+                pictureBox22.Image = pb_img_2.Image;
+                MessageBox.Show("Image 2 paling mirip");
+            }
+            else if (selisih43 < selisih41 && selisih43 < selisih42)
+            {
+                pictureBox22.Image = pb_img_3.Image;
+                MessageBox.Show("Image 3 paling mirip");
+            }
+        }
+
+        private int CompareBentuk(int[,] a, int[,] b)
+        {
+
+            int value = 0;
+            int sum = 0;
+            for (int x = 0; x < a.GetLength(0); x++)
+            {
+                for (int y = 0; y < a.GetLength(1); y++)
+                {
+                    sum += Math.Abs(a[x,y] - b[x,y]);
+                }
+                    
+            }
+
+            value = sum;
+            return value;
+        }
     }
 }

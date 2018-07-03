@@ -221,6 +221,7 @@
             this.pbDTDes = new System.Windows.Forms.PictureBox();
             this.pbDTsrc = new System.Windows.Forms.PictureBox();
             this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.btn_compare = new System.Windows.Forms.Button();
             this.btn_his_img4 = new System.Windows.Forms.Button();
             this.btn_his_img3 = new System.Windows.Forms.Button();
             this.btn_his_img2 = new System.Windows.Forms.Button();
@@ -245,7 +246,65 @@
             this.ch_img1_red = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pb_img1 = new System.Windows.Forms.PictureBox();
             this.btn_load_img1 = new System.Windows.Forms.Button();
-            this.btn_compare = new System.Windows.Forms.Button();
+            this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.pb_image_hasil_ekstraksi = new System.Windows.Forms.PictureBox();
+            this.label_jarak34 = new System.Windows.Forms.Label();
+            this.label_jarak24 = new System.Windows.Forms.Label();
+            this.label_jarak14 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label_hb_img4 = new System.Windows.Forms.Label();
+            this.label_hg_img4 = new System.Windows.Forms.Label();
+            this.label_hr_img4 = new System.Windows.Forms.Label();
+            this.label_hb_img3 = new System.Windows.Forms.Label();
+            this.label_hg_img3 = new System.Windows.Forms.Label();
+            this.label_hr_img3 = new System.Windows.Forms.Label();
+            this.label_hb_img2 = new System.Windows.Forms.Label();
+            this.label_hg_img2 = new System.Windows.Forms.Label();
+            this.label_hr_img2 = new System.Windows.Forms.Label();
+            this.label_hb_img1 = new System.Windows.Forms.Label();
+            this.label_hg_img1 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label_hr_img1 = new System.Windows.Forms.Label();
+            this.tabPage13 = new System.Windows.Forms.TabPage();
+            this.label25 = new System.Windows.Forms.Label();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.pb_img_4_hasil = new System.Windows.Forms.PictureBox();
+            this.pb_img_3_hasil = new System.Windows.Forms.PictureBox();
+            this.pb_img_2_hasil = new System.Windows.Forms.PictureBox();
+            this.pb_img_1_hasil = new System.Windows.Forms.PictureBox();
+            this.label_jarak_img34 = new System.Windows.Forms.Label();
+            this.label_jarak_img24 = new System.Windows.Forms.Label();
+            this.label_jarak_img14 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.btn_compare_bentuk = new System.Windows.Forms.Button();
+            this.btn_his_img_4 = new System.Windows.Forms.Button();
+            this.btn_his_img_3 = new System.Windows.Forms.Button();
+            this.btn_his_img_2 = new System.Windows.Forms.Button();
+            this.btn_his_img_1 = new System.Windows.Forms.Button();
+            this.pb_img_4 = new System.Windows.Forms.PictureBox();
+            this.btn_load_img_4 = new System.Windows.Forms.Button();
+            this.pb_img_3 = new System.Windows.Forms.PictureBox();
+            this.btn_load_img_3 = new System.Windows.Forms.Button();
+            this.pb_img_2 = new System.Windows.Forms.PictureBox();
+            this.btn_load_img_2 = new System.Windows.Forms.Button();
+            this.pb_img_1 = new System.Windows.Forms.PictureBox();
+            this.btn_load_img_1 = new System.Windows.Forms.Button();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
@@ -326,6 +385,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.ch_img1_green)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ch_img1_red)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img1)).BeginInit();
+            this.tabPage12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_image_hasil_ekstraksi)).BeginInit();
+            this.tabPage13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img_4_hasil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img_3_hasil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img_2_hasil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img_1_hasil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img_4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img_1)).BeginInit();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -904,6 +975,8 @@
             this.tabControl1.Controls.Add(this.tabPage9);
             this.tabControl1.Controls.Add(this.tabPage10);
             this.tabControl1.Controls.Add(this.tabPage11);
+            this.tabControl1.Controls.Add(this.tabPage12);
+            this.tabControl1.Controls.Add(this.tabPage13);
             this.tabControl1.Location = new System.Drawing.Point(15, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -1872,6 +1945,16 @@
             this.tabPage11.Text = "Ekstrak Warna";
             this.tabPage11.UseVisualStyleBackColor = true;
             // 
+            // btn_compare
+            // 
+            this.btn_compare.Location = new System.Drawing.Point(108, 594);
+            this.btn_compare.Name = "btn_compare";
+            this.btn_compare.Size = new System.Drawing.Size(84, 26);
+            this.btn_compare.TabIndex = 24;
+            this.btn_compare.Text = "Compare";
+            this.btn_compare.UseVisualStyleBackColor = true;
+            this.btn_compare.Click += new System.EventHandler(this.btn_compare_Click);
+            // 
             // btn_his_img4
             // 
             this.btn_his_img4.Location = new System.Drawing.Point(3, 513);
@@ -2204,15 +2287,602 @@
             this.btn_load_img1.UseVisualStyleBackColor = true;
             this.btn_load_img1.Click += new System.EventHandler(this.btn_load_img1_Click);
             // 
-            // btn_compare
+            // tabPage12
             // 
-            this.btn_compare.Location = new System.Drawing.Point(108, 594);
-            this.btn_compare.Name = "btn_compare";
-            this.btn_compare.Size = new System.Drawing.Size(84, 26);
-            this.btn_compare.TabIndex = 24;
-            this.btn_compare.Text = "Compare";
-            this.btn_compare.UseVisualStyleBackColor = true;
-            this.btn_compare.Click += new System.EventHandler(this.btn_compare_Click);
+            this.tabPage12.Controls.Add(this.pb_image_hasil_ekstraksi);
+            this.tabPage12.Controls.Add(this.label_jarak34);
+            this.tabPage12.Controls.Add(this.label_jarak24);
+            this.tabPage12.Controls.Add(this.label_jarak14);
+            this.tabPage12.Controls.Add(this.label22);
+            this.tabPage12.Controls.Add(this.label24);
+            this.tabPage12.Controls.Add(this.label23);
+            this.tabPage12.Controls.Add(this.label21);
+            this.tabPage12.Controls.Add(this.label_hb_img4);
+            this.tabPage12.Controls.Add(this.label_hg_img4);
+            this.tabPage12.Controls.Add(this.label_hr_img4);
+            this.tabPage12.Controls.Add(this.label_hb_img3);
+            this.tabPage12.Controls.Add(this.label_hg_img3);
+            this.tabPage12.Controls.Add(this.label_hr_img3);
+            this.tabPage12.Controls.Add(this.label_hb_img2);
+            this.tabPage12.Controls.Add(this.label_hg_img2);
+            this.tabPage12.Controls.Add(this.label_hr_img2);
+            this.tabPage12.Controls.Add(this.label_hb_img1);
+            this.tabPage12.Controls.Add(this.label_hg_img1);
+            this.tabPage12.Controls.Add(this.label17);
+            this.tabPage12.Controls.Add(this.label18);
+            this.tabPage12.Controls.Add(this.label20);
+            this.tabPage12.Controls.Add(this.label14);
+            this.tabPage12.Controls.Add(this.label15);
+            this.tabPage12.Controls.Add(this.label16);
+            this.tabPage12.Controls.Add(this.label11);
+            this.tabPage12.Controls.Add(this.label12);
+            this.tabPage12.Controls.Add(this.label13);
+            this.tabPage12.Controls.Add(this.label19);
+            this.tabPage12.Controls.Add(this.label10);
+            this.tabPage12.Controls.Add(this.label9);
+            this.tabPage12.Controls.Add(this.label_hr_img1);
+            this.tabPage12.Location = new System.Drawing.Point(4, 22);
+            this.tabPage12.Name = "tabPage12";
+            this.tabPage12.Size = new System.Drawing.Size(1315, 650);
+            this.tabPage12.TabIndex = 11;
+            this.tabPage12.Text = "Hasil Ekstraksi Warna";
+            this.tabPage12.UseVisualStyleBackColor = true;
+            // 
+            // pb_image_hasil_ekstraksi
+            // 
+            this.pb_image_hasil_ekstraksi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_image_hasil_ekstraksi.Location = new System.Drawing.Point(790, 31);
+            this.pb_image_hasil_ekstraksi.Name = "pb_image_hasil_ekstraksi";
+            this.pb_image_hasil_ekstraksi.Size = new System.Drawing.Size(281, 171);
+            this.pb_image_hasil_ekstraksi.TabIndex = 66;
+            this.pb_image_hasil_ekstraksi.TabStop = false;
+            // 
+            // label_jarak34
+            // 
+            this.label_jarak34.AutoSize = true;
+            this.label_jarak34.Location = new System.Drawing.Point(192, 490);
+            this.label_jarak34.Name = "label_jarak34";
+            this.label_jarak34.Size = new System.Drawing.Size(45, 13);
+            this.label_jarak34.TabIndex = 65;
+            this.label_jarak34.Text = "Jarak34";
+            // 
+            // label_jarak24
+            // 
+            this.label_jarak24.AutoSize = true;
+            this.label_jarak24.Location = new System.Drawing.Point(192, 465);
+            this.label_jarak24.Name = "label_jarak24";
+            this.label_jarak24.Size = new System.Drawing.Size(45, 13);
+            this.label_jarak24.TabIndex = 64;
+            this.label_jarak24.Text = "Jarak24";
+            // 
+            // label_jarak14
+            // 
+            this.label_jarak14.AutoSize = true;
+            this.label_jarak14.Location = new System.Drawing.Point(192, 442);
+            this.label_jarak14.Name = "label_jarak14";
+            this.label_jarak14.Size = new System.Drawing.Size(45, 13);
+            this.label_jarak14.TabIndex = 63;
+            this.label_jarak14.Text = "Jarak14";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(0, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(41, 13);
+            this.label22.TabIndex = 62;
+            this.label22.Text = "label22";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(30, 465);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(136, 13);
+            this.label24.TabIndex = 61;
+            this.label24.Text = "Jarak IMG2 dengan IMG4 :";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(29, 490);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(136, 13);
+            this.label23.TabIndex = 60;
+            this.label23.Text = "Jarak IMG3 dengan IMG4 :";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(30, 442);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(136, 13);
+            this.label21.TabIndex = 58;
+            this.label21.Text = "Jarak IMG1 dengan IMG4 :";
+            // 
+            // label_hb_img4
+            // 
+            this.label_hb_img4.AutoSize = true;
+            this.label_hb_img4.Location = new System.Drawing.Point(192, 344);
+            this.label_hb_img4.Name = "label_hb_img4";
+            this.label_hb_img4.Size = new System.Drawing.Size(102, 13);
+            this.label_hb_img4.TabIndex = 57;
+            this.label_hb_img4.Text = "Nilai histogram red 1";
+            // 
+            // label_hg_img4
+            // 
+            this.label_hg_img4.AutoSize = true;
+            this.label_hg_img4.Location = new System.Drawing.Point(192, 318);
+            this.label_hg_img4.Name = "label_hg_img4";
+            this.label_hg_img4.Size = new System.Drawing.Size(102, 13);
+            this.label_hg_img4.TabIndex = 56;
+            this.label_hg_img4.Text = "Nilai histogram red 1";
+            // 
+            // label_hr_img4
+            // 
+            this.label_hr_img4.AutoSize = true;
+            this.label_hr_img4.Location = new System.Drawing.Point(192, 294);
+            this.label_hr_img4.Name = "label_hr_img4";
+            this.label_hr_img4.Size = new System.Drawing.Size(102, 13);
+            this.label_hr_img4.TabIndex = 55;
+            this.label_hr_img4.Text = "Nilai histogram red 1";
+            // 
+            // label_hb_img3
+            // 
+            this.label_hb_img3.AutoSize = true;
+            this.label_hb_img3.Location = new System.Drawing.Point(192, 252);
+            this.label_hb_img3.Name = "label_hb_img3";
+            this.label_hb_img3.Size = new System.Drawing.Size(102, 13);
+            this.label_hb_img3.TabIndex = 54;
+            this.label_hb_img3.Text = "Nilai histogram red 1";
+            // 
+            // label_hg_img3
+            // 
+            this.label_hg_img3.AutoSize = true;
+            this.label_hg_img3.Location = new System.Drawing.Point(192, 226);
+            this.label_hg_img3.Name = "label_hg_img3";
+            this.label_hg_img3.Size = new System.Drawing.Size(102, 13);
+            this.label_hg_img3.TabIndex = 53;
+            this.label_hg_img3.Text = "Nilai histogram red 1";
+            // 
+            // label_hr_img3
+            // 
+            this.label_hr_img3.AutoSize = true;
+            this.label_hr_img3.Location = new System.Drawing.Point(192, 202);
+            this.label_hr_img3.Name = "label_hr_img3";
+            this.label_hr_img3.Size = new System.Drawing.Size(102, 13);
+            this.label_hr_img3.TabIndex = 52;
+            this.label_hr_img3.Text = "Nilai histogram red 1";
+            // 
+            // label_hb_img2
+            // 
+            this.label_hb_img2.AutoSize = true;
+            this.label_hb_img2.Location = new System.Drawing.Point(192, 163);
+            this.label_hb_img2.Name = "label_hb_img2";
+            this.label_hb_img2.Size = new System.Drawing.Size(102, 13);
+            this.label_hb_img2.TabIndex = 51;
+            this.label_hb_img2.Text = "Nilai histogram red 1";
+            // 
+            // label_hg_img2
+            // 
+            this.label_hg_img2.AutoSize = true;
+            this.label_hg_img2.Location = new System.Drawing.Point(192, 137);
+            this.label_hg_img2.Name = "label_hg_img2";
+            this.label_hg_img2.Size = new System.Drawing.Size(102, 13);
+            this.label_hg_img2.TabIndex = 50;
+            this.label_hg_img2.Text = "Nilai histogram red 1";
+            // 
+            // label_hr_img2
+            // 
+            this.label_hr_img2.AutoSize = true;
+            this.label_hr_img2.Location = new System.Drawing.Point(192, 113);
+            this.label_hr_img2.Name = "label_hr_img2";
+            this.label_hr_img2.Size = new System.Drawing.Size(102, 13);
+            this.label_hr_img2.TabIndex = 49;
+            this.label_hr_img2.Text = "Nilai histogram red 1";
+            // 
+            // label_hb_img1
+            // 
+            this.label_hb_img1.AutoSize = true;
+            this.label_hb_img1.Location = new System.Drawing.Point(192, 79);
+            this.label_hb_img1.Name = "label_hb_img1";
+            this.label_hb_img1.Size = new System.Drawing.Size(102, 13);
+            this.label_hb_img1.TabIndex = 48;
+            this.label_hb_img1.Text = "Nilai histogram red 1";
+            // 
+            // label_hg_img1
+            // 
+            this.label_hg_img1.AutoSize = true;
+            this.label_hg_img1.Location = new System.Drawing.Point(192, 53);
+            this.label_hg_img1.Name = "label_hg_img1";
+            this.label_hg_img1.Size = new System.Drawing.Size(102, 13);
+            this.label_hg_img1.TabIndex = 47;
+            this.label_hg_img1.Text = "Nilai histogram red 1";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(30, 344);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(136, 13);
+            this.label17.TabIndex = 46;
+            this.label17.Text = "Nilai Histogram Blue IMG4 :";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(30, 318);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(144, 13);
+            this.label18.TabIndex = 45;
+            this.label18.Text = "Nilai Histogram Green IMG4 :";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(30, 294);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(135, 13);
+            this.label20.TabIndex = 44;
+            this.label20.Text = "Nilai Histogram Red IMG4 :";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(30, 252);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(136, 13);
+            this.label14.TabIndex = 43;
+            this.label14.Text = "Nilai Histogram Blue IMG3 :";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(30, 226);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(144, 13);
+            this.label15.TabIndex = 42;
+            this.label15.Text = "Nilai Histogram Green IMG3 :";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(30, 202);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(135, 13);
+            this.label16.TabIndex = 41;
+            this.label16.Text = "Nilai Histogram Red IMG3 :";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(30, 163);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(136, 13);
+            this.label11.TabIndex = 40;
+            this.label11.Text = "Nilai Histogram Blue IMG2 :";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(30, 137);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(144, 13);
+            this.label12.TabIndex = 39;
+            this.label12.Text = "Nilai Histogram Green IMG2 :";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(30, 113);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(135, 13);
+            this.label13.TabIndex = 38;
+            this.label13.Text = "Nilai Histogram Red IMG2 :";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(30, 79);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(136, 13);
+            this.label19.TabIndex = 37;
+            this.label19.Text = "Nilai Histogram Blue IMG1 :";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(30, 53);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(144, 13);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "Nilai Histogram Green IMG1 :";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(30, 29);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(135, 13);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "Nilai Histogram Red IMG1 :";
+            // 
+            // label_hr_img1
+            // 
+            this.label_hr_img1.AutoSize = true;
+            this.label_hr_img1.Location = new System.Drawing.Point(192, 29);
+            this.label_hr_img1.Name = "label_hr_img1";
+            this.label_hr_img1.Size = new System.Drawing.Size(102, 13);
+            this.label_hr_img1.TabIndex = 26;
+            this.label_hr_img1.Text = "Nilai histogram red 1";
+            // 
+            // tabPage13
+            // 
+            this.tabPage13.Controls.Add(this.label25);
+            this.tabPage13.Controls.Add(this.pictureBox22);
+            this.tabPage13.Controls.Add(this.pb_img_4_hasil);
+            this.tabPage13.Controls.Add(this.pb_img_3_hasil);
+            this.tabPage13.Controls.Add(this.pb_img_2_hasil);
+            this.tabPage13.Controls.Add(this.pb_img_1_hasil);
+            this.tabPage13.Controls.Add(this.label_jarak_img34);
+            this.tabPage13.Controls.Add(this.label_jarak_img24);
+            this.tabPage13.Controls.Add(this.label_jarak_img14);
+            this.tabPage13.Controls.Add(this.label28);
+            this.tabPage13.Controls.Add(this.label29);
+            this.tabPage13.Controls.Add(this.label30);
+            this.tabPage13.Controls.Add(this.btn_compare_bentuk);
+            this.tabPage13.Controls.Add(this.btn_his_img_4);
+            this.tabPage13.Controls.Add(this.btn_his_img_3);
+            this.tabPage13.Controls.Add(this.btn_his_img_2);
+            this.tabPage13.Controls.Add(this.btn_his_img_1);
+            this.tabPage13.Controls.Add(this.pb_img_4);
+            this.tabPage13.Controls.Add(this.btn_load_img_4);
+            this.tabPage13.Controls.Add(this.pb_img_3);
+            this.tabPage13.Controls.Add(this.btn_load_img_3);
+            this.tabPage13.Controls.Add(this.pb_img_2);
+            this.tabPage13.Controls.Add(this.btn_load_img_2);
+            this.tabPage13.Controls.Add(this.pb_img_1);
+            this.tabPage13.Controls.Add(this.btn_load_img_1);
+            this.tabPage13.Location = new System.Drawing.Point(4, 22);
+            this.tabPage13.Name = "tabPage13";
+            this.tabPage13.Size = new System.Drawing.Size(1315, 650);
+            this.tabPage13.TabIndex = 12;
+            this.tabPage13.Text = "Ektraksi Bentuk";
+            this.tabPage13.UseVisualStyleBackColor = true;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(641, 118);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(92, 13);
+            this.label25.TabIndex = 77;
+            this.label25.Text = "Image yang mirip :";
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox22.Location = new System.Drawing.Point(763, 114);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox22.TabIndex = 76;
+            this.pictureBox22.TabStop = false;
+            // 
+            // pb_img_4_hasil
+            // 
+            this.pb_img_4_hasil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_img_4_hasil.Location = new System.Drawing.Point(344, 438);
+            this.pb_img_4_hasil.Name = "pb_img_4_hasil";
+            this.pb_img_4_hasil.Size = new System.Drawing.Size(100, 100);
+            this.pb_img_4_hasil.TabIndex = 75;
+            this.pb_img_4_hasil.TabStop = false;
+            // 
+            // pb_img_3_hasil
+            // 
+            this.pb_img_3_hasil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_img_3_hasil.Location = new System.Drawing.Point(344, 299);
+            this.pb_img_3_hasil.Name = "pb_img_3_hasil";
+            this.pb_img_3_hasil.Size = new System.Drawing.Size(100, 100);
+            this.pb_img_3_hasil.TabIndex = 74;
+            this.pb_img_3_hasil.TabStop = false;
+            // 
+            // pb_img_2_hasil
+            // 
+            this.pb_img_2_hasil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_img_2_hasil.Location = new System.Drawing.Point(344, 163);
+            this.pb_img_2_hasil.Name = "pb_img_2_hasil";
+            this.pb_img_2_hasil.Size = new System.Drawing.Size(100, 100);
+            this.pb_img_2_hasil.TabIndex = 73;
+            this.pb_img_2_hasil.TabStop = false;
+            // 
+            // pb_img_1_hasil
+            // 
+            this.pb_img_1_hasil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_img_1_hasil.Location = new System.Drawing.Point(344, 27);
+            this.pb_img_1_hasil.Name = "pb_img_1_hasil";
+            this.pb_img_1_hasil.Size = new System.Drawing.Size(100, 100);
+            this.pb_img_1_hasil.TabIndex = 72;
+            this.pb_img_1_hasil.TabStop = false;
+            // 
+            // label_jarak_img34
+            // 
+            this.label_jarak_img34.AutoSize = true;
+            this.label_jarak_img34.Location = new System.Drawing.Point(760, 75);
+            this.label_jarak_img34.Name = "label_jarak_img34";
+            this.label_jarak_img34.Size = new System.Drawing.Size(45, 13);
+            this.label_jarak_img34.TabIndex = 71;
+            this.label_jarak_img34.Text = "Jarak34";
+            // 
+            // label_jarak_img24
+            // 
+            this.label_jarak_img24.AutoSize = true;
+            this.label_jarak_img24.Location = new System.Drawing.Point(760, 50);
+            this.label_jarak_img24.Name = "label_jarak_img24";
+            this.label_jarak_img24.Size = new System.Drawing.Size(45, 13);
+            this.label_jarak_img24.TabIndex = 70;
+            this.label_jarak_img24.Text = "Jarak24";
+            // 
+            // label_jarak_img14
+            // 
+            this.label_jarak_img14.AutoSize = true;
+            this.label_jarak_img14.Location = new System.Drawing.Point(760, 27);
+            this.label_jarak_img14.Name = "label_jarak_img14";
+            this.label_jarak_img14.Size = new System.Drawing.Size(45, 13);
+            this.label_jarak_img14.TabIndex = 69;
+            this.label_jarak_img14.Text = "Jarak14";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(598, 50);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(136, 13);
+            this.label28.TabIndex = 68;
+            this.label28.Text = "Jarak IMG2 dengan IMG4 :";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(597, 75);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(136, 13);
+            this.label29.TabIndex = 67;
+            this.label29.Text = "Jarak IMG3 dengan IMG4 :";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(598, 27);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(136, 13);
+            this.label30.TabIndex = 66;
+            this.label30.Text = "Jarak IMG1 dengan IMG4 :";
+            // 
+            // btn_compare_bentuk
+            // 
+            this.btn_compare_bentuk.Location = new System.Drawing.Point(125, 597);
+            this.btn_compare_bentuk.Name = "btn_compare_bentuk";
+            this.btn_compare_bentuk.Size = new System.Drawing.Size(84, 26);
+            this.btn_compare_bentuk.TabIndex = 49;
+            this.btn_compare_bentuk.Text = "Compare";
+            this.btn_compare_bentuk.UseVisualStyleBackColor = true;
+            this.btn_compare_bentuk.Click += new System.EventHandler(this.btn_compare_bentuk_Click);
+            // 
+            // btn_his_img_4
+            // 
+            this.btn_his_img_4.Location = new System.Drawing.Point(20, 516);
+            this.btn_his_img_4.Name = "btn_his_img_4";
+            this.btn_his_img_4.Size = new System.Drawing.Size(84, 26);
+            this.btn_his_img_4.TabIndex = 48;
+            this.btn_his_img_4.Text = "Get Value";
+            this.btn_his_img_4.UseVisualStyleBackColor = true;
+            this.btn_his_img_4.Click += new System.EventHandler(this.btn_his_img_4_Click);
+            // 
+            // btn_his_img_3
+            // 
+            this.btn_his_img_3.Location = new System.Drawing.Point(20, 377);
+            this.btn_his_img_3.Name = "btn_his_img_3";
+            this.btn_his_img_3.Size = new System.Drawing.Size(84, 26);
+            this.btn_his_img_3.TabIndex = 47;
+            this.btn_his_img_3.Text = "Get Value";
+            this.btn_his_img_3.UseVisualStyleBackColor = true;
+            this.btn_his_img_3.Click += new System.EventHandler(this.btn_his_img_3_Click);
+            // 
+            // btn_his_img_2
+            // 
+            this.btn_his_img_2.Location = new System.Drawing.Point(20, 241);
+            this.btn_his_img_2.Name = "btn_his_img_2";
+            this.btn_his_img_2.Size = new System.Drawing.Size(84, 26);
+            this.btn_his_img_2.TabIndex = 46;
+            this.btn_his_img_2.Text = "Get Value";
+            this.btn_his_img_2.UseVisualStyleBackColor = true;
+            this.btn_his_img_2.Click += new System.EventHandler(this.btn_his_img_2_Click);
+            // 
+            // btn_his_img_1
+            // 
+            this.btn_his_img_1.Location = new System.Drawing.Point(20, 105);
+            this.btn_his_img_1.Name = "btn_his_img_1";
+            this.btn_his_img_1.Size = new System.Drawing.Size(84, 26);
+            this.btn_his_img_1.TabIndex = 45;
+            this.btn_his_img_1.Text = "Get Value";
+            this.btn_his_img_1.UseVisualStyleBackColor = true;
+            this.btn_his_img_1.Click += new System.EventHandler(this.btn_his_img_1_Click);
+            // 
+            // pb_img_4
+            // 
+            this.pb_img_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_img_4.Location = new System.Drawing.Point(125, 438);
+            this.pb_img_4.Name = "pb_img_4";
+            this.pb_img_4.Size = new System.Drawing.Size(100, 100);
+            this.pb_img_4.TabIndex = 41;
+            this.pb_img_4.TabStop = false;
+            // 
+            // btn_load_img_4
+            // 
+            this.btn_load_img_4.Location = new System.Drawing.Point(20, 484);
+            this.btn_load_img_4.Name = "btn_load_img_4";
+            this.btn_load_img_4.Size = new System.Drawing.Size(84, 26);
+            this.btn_load_img_4.TabIndex = 40;
+            this.btn_load_img_4.Text = "Load img4";
+            this.btn_load_img_4.UseVisualStyleBackColor = true;
+            this.btn_load_img_4.Click += new System.EventHandler(this.btn_load_img_4_Click);
+            // 
+            // pb_img_3
+            // 
+            this.pb_img_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_img_3.Location = new System.Drawing.Point(125, 299);
+            this.pb_img_3.Name = "pb_img_3";
+            this.pb_img_3.Size = new System.Drawing.Size(100, 100);
+            this.pb_img_3.TabIndex = 36;
+            this.pb_img_3.TabStop = false;
+            // 
+            // btn_load_img_3
+            // 
+            this.btn_load_img_3.Location = new System.Drawing.Point(20, 345);
+            this.btn_load_img_3.Name = "btn_load_img_3";
+            this.btn_load_img_3.Size = new System.Drawing.Size(84, 26);
+            this.btn_load_img_3.TabIndex = 35;
+            this.btn_load_img_3.Text = "Load img3";
+            this.btn_load_img_3.UseVisualStyleBackColor = true;
+            this.btn_load_img_3.Click += new System.EventHandler(this.btn_load_img_3_Click);
+            // 
+            // pb_img_2
+            // 
+            this.pb_img_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_img_2.Location = new System.Drawing.Point(125, 163);
+            this.pb_img_2.Name = "pb_img_2";
+            this.pb_img_2.Size = new System.Drawing.Size(100, 100);
+            this.pb_img_2.TabIndex = 31;
+            this.pb_img_2.TabStop = false;
+            // 
+            // btn_load_img_2
+            // 
+            this.btn_load_img_2.Location = new System.Drawing.Point(20, 209);
+            this.btn_load_img_2.Name = "btn_load_img_2";
+            this.btn_load_img_2.Size = new System.Drawing.Size(84, 26);
+            this.btn_load_img_2.TabIndex = 30;
+            this.btn_load_img_2.Text = "Load img2";
+            this.btn_load_img_2.UseVisualStyleBackColor = true;
+            this.btn_load_img_2.Click += new System.EventHandler(this.btn_load_img_2_Click);
+            // 
+            // pb_img_1
+            // 
+            this.pb_img_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_img_1.Location = new System.Drawing.Point(125, 27);
+            this.pb_img_1.Name = "pb_img_1";
+            this.pb_img_1.Size = new System.Drawing.Size(100, 100);
+            this.pb_img_1.TabIndex = 26;
+            this.pb_img_1.TabStop = false;
+            // 
+            // btn_load_img_1
+            // 
+            this.btn_load_img_1.Location = new System.Drawing.Point(20, 73);
+            this.btn_load_img_1.Name = "btn_load_img_1";
+            this.btn_load_img_1.Size = new System.Drawing.Size(84, 26);
+            this.btn_load_img_1.TabIndex = 25;
+            this.btn_load_img_1.Text = "Load img1";
+            this.btn_load_img_1.UseVisualStyleBackColor = true;
+            this.btn_load_img_1.Click += new System.EventHandler(this.btn_load_img_1_Click);
             // 
             // Form1
             // 
@@ -2308,6 +2978,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.ch_img1_green)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ch_img1_red)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_img1)).EndInit();
+            this.tabPage12.ResumeLayout(false);
+            this.tabPage12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_image_hasil_ekstraksi)).EndInit();
+            this.tabPage13.ResumeLayout(false);
+            this.tabPage13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img_4_hasil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img_3_hasil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img_2_hasil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img_1_hasil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img_4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_img_1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2477,6 +3161,65 @@
         private System.Windows.Forms.Button btn_his_img2;
         private System.Windows.Forms.Button btn_his_img1;
         private System.Windows.Forms.Button btn_compare;
+        private System.Windows.Forms.TabPage tabPage12;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label_hr_img1;
+        private System.Windows.Forms.Label label_hb_img4;
+        private System.Windows.Forms.Label label_hg_img4;
+        private System.Windows.Forms.Label label_hr_img4;
+        private System.Windows.Forms.Label label_hb_img3;
+        private System.Windows.Forms.Label label_hg_img3;
+        private System.Windows.Forms.Label label_hr_img3;
+        private System.Windows.Forms.Label label_hb_img2;
+        private System.Windows.Forms.Label label_hg_img2;
+        private System.Windows.Forms.Label label_hr_img2;
+        private System.Windows.Forms.Label label_hb_img1;
+        private System.Windows.Forms.Label label_hg_img1;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label_jarak34;
+        private System.Windows.Forms.Label label_jarak24;
+        private System.Windows.Forms.Label label_jarak14;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.PictureBox pb_image_hasil_ekstraksi;
+        private System.Windows.Forms.TabPage tabPage13;
+        private System.Windows.Forms.Button btn_compare_bentuk;
+        private System.Windows.Forms.Button btn_his_img_4;
+        private System.Windows.Forms.Button btn_his_img_3;
+        private System.Windows.Forms.Button btn_his_img_2;
+        private System.Windows.Forms.Button btn_his_img_1;
+        private System.Windows.Forms.PictureBox pb_img_4;
+        private System.Windows.Forms.Button btn_load_img_4;
+        private System.Windows.Forms.PictureBox pb_img_3;
+        private System.Windows.Forms.Button btn_load_img_3;
+        private System.Windows.Forms.PictureBox pb_img_2;
+        private System.Windows.Forms.Button btn_load_img_2;
+        private System.Windows.Forms.PictureBox pb_img_1;
+        private System.Windows.Forms.Button btn_load_img_1;
+        private System.Windows.Forms.Label label_jarak_img34;
+        private System.Windows.Forms.Label label_jarak_img24;
+        private System.Windows.Forms.Label label_jarak_img14;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.PictureBox pictureBox22;
+        private System.Windows.Forms.PictureBox pb_img_4_hasil;
+        private System.Windows.Forms.PictureBox pb_img_3_hasil;
+        private System.Windows.Forms.PictureBox pb_img_2_hasil;
+        private System.Windows.Forms.PictureBox pb_img_1_hasil;
 
     }
 }
